@@ -48,7 +48,7 @@
   .shape-lines {
     position: absolute;
     top: 0;
-    right: 6vw;
+    inset-inline-end: 6vw;
     z-index: 1;
     @include max-screen-992 {
       display: none;

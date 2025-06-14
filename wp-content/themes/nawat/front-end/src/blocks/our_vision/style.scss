@@ -50,7 +50,26 @@
     padding: 3vw 1.8vw 1.8vw 2.4vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    min-height: 250px;
+    transition: background $duration $ease;
+    &:hover {
+      background: $deep-green;
+      .feature-icon {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .feature-number {
+        right: 50%;
+        transform: translateX(50%);
+      }
+    }
+    @include media-screen-768 {
+      min-height: 380px;
+    }
+    @include min-large-screen {
+      min-height: 470px;
+    }
     @include max-media-screen-768 {
       max-width: 440px;
       margin: 0 auto;
@@ -63,6 +82,10 @@
   .feature-icon {
     width: 50px;
     height: 60px;
+    position: absolute;
+    top: 3vw;
+    left: 2.4vw;
+    transition: left $duration $ease, transform $duration $ease;
    @include min-media-screen-992 {
      width: 5.2vw;
      height: 3.9vw;
@@ -82,7 +105,11 @@
     font-family: $Neue;
     text-align: right;
     display: block;
-
+    width: fit-content;
+    position: absolute;
+    bottom: 1.8vw;
+    right: 1.8vw;
+    transition: right $duration $ease, transform $duration $ease;
     @include min-media-screen-992 {
       font-size: 100px;
     }

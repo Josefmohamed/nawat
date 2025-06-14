@@ -17,8 +17,8 @@ body {
     transition: border-color $duration, color $duration;
     font-size: 16px !important;
     font-family: $Poppins;
-    padding-right: 3px !important;
-    padding-inline-start: 16px !important;
+    padding-right: 16px !important;
+    padding-left: 16px !important;
     border-radius: 8px;
     &::placeholder {
       color: #828282;

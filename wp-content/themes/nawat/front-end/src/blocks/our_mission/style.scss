@@ -1,0 +1,70 @@
+@import '../../styles/variables.scss';
+
+.our_mission {
+  background: $gray-color;
+
+  .container {
+    @include media-screen-768 {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 55px;
+    }
+  }
+
+  .content {
+    padding-top: 20px;
+    @include media-screen-768 {
+      width: 50%;
+    }
+    @include max-media-screen-768 {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+
+  .main-title {
+    margin-bottom: 10px;
+    @include media-screen-768 {
+      margin-bottom: 1.9vw;
+    }
+  }
+
+  .description {
+    margin-bottom: 10px;
+    max-width: 710px;
+    @include media-screen-768 {
+      margin-bottom: 1.7vw;
+    }
+  }
+
+  .description-2 {
+    max-width: 686px;
+  }
+
+  .lines-shape {
+    display: block;
+    width: 3.75vw;
+    height: auto;
+    margin-top: 8.8vw;
+    @include max-media-screen-768 {
+      display: none;
+    }
+  }
+
+  .image-wrapper {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    @include max-media-screen-768 {
+      max-width: 500px;
+      margin: 30px auto 0;
+    }
+    @include media-screen-768 {
+      width: 50%;
+      aspect-ratio: 1 / 1.4;
+      transform: translateY(-4.4vw);
+      padding: 20px 0;
+    }
+  }
+
+}

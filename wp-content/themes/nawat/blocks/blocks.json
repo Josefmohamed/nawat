@@ -1,0 +1,37 @@
+{
+  "hero_block": {
+    "title": "Hero Block",
+    "status": true
+  },
+  "general_block": {
+    "title": "General Block",
+    "status": true
+  },
+  "our_vision": {
+    "title": "Our Vision",
+    "status": true
+  },
+
+  "image_and_text": {
+    "title": "Image And Text",
+    "status": true
+  },
+  "contact_us_block": {
+    "title": "Contact Us Block",
+    "status": true
+  },
+  "our_mission": {
+    "title": "Our Mission",
+    "status": true
+  },
+  "about_us_block": {
+    "title": "About Us Block",
+    "status": true
+  },
+
+  "find_us": {
+    "title": "Find Us",
+    "status": true
+  }
+
+}

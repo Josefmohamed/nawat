@@ -1,0 +1,166 @@
+@import 'variables.scss';
+
+// region fonts
+
+//@font-face {
+//  font-weight: 400;
+//  font-family: 'TT Norms Pro Serif Var Roman';
+//  src: url('./fonts/tt_norms_pro_serif/TTMedium.woff2') format('woff2');
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-weight: 450;
+//  font-family: 'TT Norms Pro Serif Var Roman';
+//  src: url('./fonts/tt_norms_pro_serif/TTLight.woff2') format('woff2');
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-weight: 400;
+//  font-family: 'TT Norms Pro Variable';
+//  src: url('./fonts/tt_norms_pro_serif/TT-Norms-Pro-Trial-Regular.woff2') format('woff2');
+//  font-style: normal;
+//}
+
+
+@font-face {
+  font-weight: 400;
+  font-family: "Neue Regrade", sans-serif;
+  src: url('./fonts/Neue Regrade Regular.woff2') format('woff2');
+  font-style: normal;
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: "Neue Regrade", sans-serif;
+  src: url('./fonts/Neue Regrade Medium.woff2') format('woff2');
+  font-style: normal;
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Neue Regrade", sans-serif;
+  src: url('./fonts/Neue Regrade Semibold.woff2') format('woff2');
+  font-style: normal;
+}
+
+//.syne-regular {
+//  font-family: "Syne", sans-serif;
+//  font-optical-sizing: auto;
+//  font-weight: 600;
+//  font-style: normal;
+//}
+
+// endregion fonts
+
+//region typography
+.display, .display p {
+  color: #FFF;
+  font-family: $Desolator-ff;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 100%;
+  @include media-screen-768 {
+    font-size: 64px;
+  }
+  @include min-medium-screen {
+    font-size: 84px;
+  }
+}
+
+h1, .nawat-h1, .nawat-h1 p {
+  font-family: $Desolator-ff;
+  color: #FFF;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  @include media-screen-768 {
+    font-size: 40px;
+  }
+  @include min-medium-screen {
+    font-size: 48px;
+  }
+}
+
+h2, .nawat-h2, .nawat-h2 p {
+  font-family: $Desolator-ff;
+  color: #FFF;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  @include media-screen-768 {
+    font-size: 36px;
+  }
+  @include min-medium-screen {
+    font-size: 40px;
+  }
+}
+
+h3, .nawat-h3, .nawat-h3 p {
+  font-family: $Desolator-ff;
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  @include media-screen-768 {
+    font-size: 30px;
+  }
+  @include min-medium-screen {
+    font-size: 36px;
+  }
+}
+
+h4, .nawat-h4, .nawat-h4 p {
+  font-family: $Desolator-ff;
+  color: #FFF;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125%;
+  @include media-screen-768 {
+    font-size: 26px;
+  }
+  @include min-medium-screen {
+    font-size: 32px;
+  }
+}
+
+h5, .nawat-h5, .nawat-h5 p {
+  font-family: $Desolator-ff;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  @include media-screen-768 {
+    font-size: 24px;
+  }
+}
+
+h6, .nawat-h6, .nawat-h6 p {
+  font-family: $Desolator-ff;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  @include media-screen-768 {
+    font-size: 22px;
+  }
+}
+
+
+.cta-button {
+  @include theme-cta-button-style;
+}
+
+.cta-link {
+  @include theme-cta-link-style;
+}
+
+

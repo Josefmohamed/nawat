@@ -1,0 +1,34 @@
+@import '../../styles/variables.scss';
+
+.find_us {
+  text-align: center;
+  padding-top: 5.8vw;
+  padding-bottom: 8vw;
+  overflow: hidden;
+  .main-title {
+    color: $deep-green;
+  }
+  .paragraph {
+    color: $deep-green;
+    margin-top: 24px;
+  }
+  .map {
+    margin-top: 5.3vw;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 730px;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .big-circle {
+    position: absolute;
+    bottom: -250px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    width: 50vw;
+    height: auto;
+  }
+}

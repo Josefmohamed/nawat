@@ -50,6 +50,10 @@
     @include max-media-screen-768 {
       display: none;
     }
+    body.rtl & {
+      transform: scaleX(-1);
+    }
+
   }
 
   .image-wrapper {

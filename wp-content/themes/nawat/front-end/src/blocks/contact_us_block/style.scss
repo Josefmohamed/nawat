@@ -54,5 +54,8 @@
     gap: 12px;
     color: $deep-green;
     margin-bottom: 15px;
+    svg {
+      flex-shrink: 0;
+    }
   }
 }

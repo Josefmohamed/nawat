@@ -273,7 +273,16 @@ header {
       display: none;
     }
   }
-  
+
+  .site-lang-switcher {
+    &.desktop {
+      display: none;
+      @include min-media-screen-992 {
+        display: flex;
+        margin-inline-start: 45px;
+      }
+    }
+  }
 
 }
 body.home header {

@@ -62,8 +62,6 @@ $form = get_field('form')
                     </a>
                 <?php endif; ?>
                 <?php if ($email_link): ?>
-
-
                     <a href="<?= esc_url($email_link['url']) ?>" target="<?= esc_attr($email_link['target']) ?>"
                        class="form-link paragraph size-22 animation-fade-me-up">
                         <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -91,7 +89,6 @@ $form = get_field('form')
                         <span class="text"><?= esc_html($available_time) ?></span>
                     </div>
                 <?php endif; ?>
-
             </div>
 
         </div>

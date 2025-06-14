@@ -70,7 +70,6 @@ $header_logo = get_field('header_logo', 'options');
       <div class="navbar-wrapper">
         <?php if (have_rows('menu_links', 'options')) { ?>
           <ul class="primary-menu">
-
             <?php while (have_rows('menu_links', 'options')) {
               the_row();
               $menu_link = get_sub_field('link');
@@ -82,20 +81,34 @@ $header_logo = get_field('header_logo', 'options');
                 </a>
               </li>
             <?php } ?>
+              <div class="site-lang-switcher menu-item mobile">
+                  <?php
+                  if (function_exists('pll_the_languages')) {
+                      $languages = pll_the_languages(array('raw' => 1, 'hide_current' => 1));
+                      foreach ($languages as $lang) {
+                          if ($lang['slug'] == 'ar') {
+                              echo '<a href="' . esc_url($lang['url']) . '" class="wpml-ls-item  nav-item capital-text header-link cta-link paragraph-16" aria-label="تغيير اللغة إلى العربية">AR</a>';
+                          } elseif ($lang['slug'] == 'en') {
+                              echo '<a href="' . esc_url($lang['url']) . '" class="wpml-ls-item  nav-item capital-text header-link paragraph-16" aria-label="Switch language to English">EN</a>';
+                          }
+                      }
+                  }
+                  ?>
+              </div>
           </ul>
         <?php } ?>
       </div>
     </nav>
 
-      <div class="site-lang-switcher menu-item ">
+      <div class="site-lang-switcher menu-item desktop">
           <?php
           if (function_exists('pll_the_languages')) {
               $languages = pll_the_languages(array('raw' => 1, 'hide_current' => 1));
               foreach ($languages as $lang) {
                   if ($lang['slug'] == 'ar') {
-                      echo '<a href="' . esc_url($lang['url']) . '" class="wpml-ls-item  nav-item capital-text header-link paragraph-16" aria-label="تغيير اللغة إلى العربية">AR</a>';
+                      echo '<a href="' . esc_url($lang['url']) . '" class="wpml-ls-item  nav-item capital-text header-link cta-link paragraph-16" aria-label="تغيير اللغة إلى العربية">AR</a>';
                   } elseif ($lang['slug'] == 'en') {
-                      echo '<a href="' . esc_url($lang['url']) . '" class="wpml-ls-item  nav-item capital-text header-link paragraph-16" aria-label="Switch language to English">EN</a>';
+                      echo '<a href="' . esc_url($lang['url']) . '" class="wpml-ls-item  nav-item capital-text header-link cta-link paragraph-16" aria-label="Switch language to English">EN</a>';
                   }
               }
           }

@@ -110,14 +110,23 @@ function sanitize_svg($file)
 
 add_filter('wp_handle_upload_prefilter', 'sanitize_svg');
 
-//region gravity form hooks
+// region gravity form hooks
 add_filter('gform_submit_button', 'form_submit_button', 10, 2);
 function form_submit_button($button, $form)
 {
-  return '<button class="cta-button large bg-orange cta-form" id="gform_submit_button_' . $form['id'] . '" aria-label="Submit">
-        Submit
-    </button>';
+    $current_lang = get_locale(); // الحصول على اللغة الحالية
+
+    if ($current_lang === 'ar') { // إذا كانت اللغة العربية
+        return '<button class="cta-button large bg-orange cta-form" id="gform_submit_button_' . $form['id'] . '" aria-label="Submit">
+            إرسال
+        </button>';
+    } else { // إذا كانت اللغة الإنجليزية
+        return '<button class="cta-button large bg-orange cta-form" id="gform_submit_button_' . $form['id'] . '" aria-label="Submit">
+            Submit
+        </button>';
+    }
 }
+// endregion
 
 
 // Hook into the 'init' action

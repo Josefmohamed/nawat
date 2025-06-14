@@ -33,13 +33,13 @@ $map = get_field('map');
 <section id="<?= esc_attr($id) ?>" class="<?= esc_attr($className) ?>">
     <div class="container">
         <?php if ($title): ?>
-            <h3 class="main-title with-line center-line"><?= $title ?></h3>
+            <h3 class="main-title with-line center-line animation-fade-me-up"><?= $title ?></h3>
         <?php endif; ?>
         <?php if ($paragraph): ?>
-            <div class="paragraph size-22"><?= $paragraph ?></div>
+            <div class="paragraph size-22 animation-fade-me-up"><?= $paragraph ?></div>
         <?php endif; ?>
         <?php if ($map): ?>
-            <div class="map">
+            <div class="map animation-fade-me-up">
                 <?= $map ?>
             </div>
         <?php endif; ?>

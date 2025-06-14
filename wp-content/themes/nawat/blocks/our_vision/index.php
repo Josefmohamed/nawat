@@ -32,8 +32,8 @@ $description = get_field('description');
 
     <div class="container">
         <h2 class="main-title with-line center-line animation-fade-me-up"><?= esc_html($title) ?></h2>
-        <div class="paragraph green bold description size-22"><?=($paragraph) ?></div>
-        <div class="paragraph green size-22"><?=($description) ?></div>
+        <div class="paragraph green bold description size-22 animation-fade-me-up"><?=($paragraph) ?></div>
+        <div class="paragraph green size-22 animation-fade-me-up"><?=($description) ?></div>
         <div class="features-wrapper">
             <?php
             $count = 1;
@@ -43,7 +43,7 @@ $description = get_field('description');
                 $feature_text = get_sub_field('feature_text');
                 $feature_number = get_sub_field('feature_number');
                 ?>
-                <div class="feature">
+                <div class="feature animation-fade-me-up">
                     <div class="feature-icon">
                         <img src="<?= esc_url($icon['url']) ?>" alt="<?= esc_attr($icon) ?>">
                     </div>

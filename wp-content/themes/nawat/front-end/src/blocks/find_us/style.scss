@@ -2,7 +2,7 @@
 
 .find_us {
   text-align: center;
-  padding-top: 5.8vw;
+  padding-top: 3.8vw;
   padding-bottom: 8vw;
   overflow: hidden;
   .main-title {
@@ -30,5 +30,8 @@
     z-index: -1;
     width: 50vw;
     height: auto;
+    @include max-screen-992 {
+      display: none;
+    }
   }
 }

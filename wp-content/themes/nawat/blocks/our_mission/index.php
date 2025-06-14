@@ -29,10 +29,10 @@ $photo = get_field('media');
 <section id="<?= esc_attr($id) ?>" class="<?= esc_attr($className) ?>">
     <div class="container">
         <div class="content">
-            <h2 class="main-title"><?= esc_html($title) ?></h2>
-            <div class="paragraph bold green description"><?= ($information) ?></div>
-            <div class="paragraph green description-2"><?= ($paragraph) ?></div>
-            <svg class="lines-shape" width="72" height="297" viewBox="0 0 72 297" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <h2 class="main-title animation-fade-me-up"><?= esc_html($title) ?></h2>
+            <div class="paragraph bold green description animation-fade-me-up"><?= ($information) ?></div>
+            <div class="paragraph green description-2 animation-fade-me-up"><?= ($paragraph) ?></div>
+            <svg class="lines-shape animation-fade-me-up" width="72" height="297" viewBox="0 0 72 297" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8.29623 0.697021L8.29646 297" stroke="#0C343D" stroke-width="15"/>
                 <line y1="-7.5" x2="165.448" y2="-7.5" transform="matrix(4.37114e-08 1 1 -4.37114e-08 43.6086 0.697021)" stroke="#68848A" stroke-width="15"/>
                 <path d="M63.9209 166.145L63.9209 297" stroke="#0C343D" stroke-width="15"/>
@@ -41,7 +41,7 @@ $photo = get_field('media');
         </div>
         <?php if ($photo): ?>
             <picture class="image-wrapper">
-                <img src="<?= esc_url($photo['url']) ?>" alt="<?= esc_attr($photo) ?>">
+                <img class="animation-fade-me-up" src="<?= esc_url($photo['url']) ?>" alt="<?= esc_attr($photo) ?>">
             </picture>
         <?php endif; ?>
     </div>

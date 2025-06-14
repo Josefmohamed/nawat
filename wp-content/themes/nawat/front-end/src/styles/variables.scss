@@ -207,124 +207,6 @@ $xxx-large-screen-min-width: 2500px;
 //endregion media query
 
 
-@mixin theme-cta-button-style {
-  width: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  cursor: pointer;
-  font-style: normal;
-  line-height: 100%;
-  text-transform: capitalize;
-  color: $neutral-warm-grey-1;
-  transition: background-color $duration, color $duration, border-color $duration;
-  
-  //btn size
-  &.large {
-    padding: 16px 24px;
-    font-family: $Desolator-ff;
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 13px;
-    
-    svg {
-      width: 14.3px;
-      height: 14.3px;
-    }
-  }
-  &.medium {
-    padding: 12px 24px;
-    font-family: $Desolator-ff;
-    font-size: 16px;
-    font-weight: 450;
-    line-height: 11px;
-    
-    svg {
-      width: 11px;
-      height: 11px;
-    }
-  }
-  &.small {
-    padding: 8px 12px;
-    font-family: $Poppins;
-    font-size: 13px;
-    font-weight: 450;
-    line-height: 9px;
-    
-    svg {
-      width: 8px;
-      height: 8px;
-    }
-  }
-  
-  //btn style
-  &.secondary {
-    background-color: $tertiary-light-coral-60;
-    color: $secondary-warm-umber;
-    
-    svg {
-      path {
-        fill: $secondary-warm-umber;
-      }
-    }
-    
-    &:hover {
-      background-color: $tertiary-soft-coral-4;
-    }
-  }
-  
-  &.dark-outline {
-    border: 1px solid $primary-warm-orange;
-    color: $primary-warm-orange;
-    
-    svg {
-      path {
-        fill: $primary-warm-orange;
-      }
-    }
-    
-    &:hover {
-      color: $neutral-20-white-ivory;
-      
-      svg {
-        path {
-          fill: $neutral-20-white-ivory;
-        }
-      }
-    }
-    
-  }
-  &.light-outline {
-    border: 1px solid $primary-light-orange-10;
-    color: $primary-light-orange-10;
-    
-    svg {
-      path {
-        fill: $primary-light-orange-10;
-      }
-    }
-    
-    &:hover {
-      color: $neutral-warm-grey-1;
-      background-color: $tertiary-soft-coral-4;
-      border-color: $tertiary-soft-coral-4;
-      
-      svg {
-        path {
-          fill: $neutral-warm-grey-1;
-        }
-      }
-    }
-  }
-  
-  svg {
-    margin-left: 8px;
-  }
-  &:hover {
-    background-color: $primary-warm-orange;
-  }
-}
 
 @mixin theme-cta-link-style {
   width: fit-content;
@@ -336,6 +218,8 @@ $xxx-large-screen-min-width: 2500px;
   font-size: 16px;
   font-weight: 600;
   font-family: $Neue;
+  position: relative;
+  height: fit-content;
   @include min-large-screen {
     font-size: 28px;
   }

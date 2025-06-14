@@ -28,7 +28,7 @@ $location = get_field('location');
 $phone_number = get_field('phone_number');
 $email_link = get_field('email_link');
 $available_time = get_field('available_time');
-
+$form = get_field('form')
 ?>
 
 
@@ -96,9 +96,12 @@ $available_time = get_field('available_time');
 
         </div>
 
-        <div class="form animation-fade-me-up">
-            <?= do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]') ?>
+        <div class="form x">
+            <?php echo do_shortcode('[gravityform id="' . $form . '" ajax="true" title="false" description="false"]'); ?>
         </div>
+
+
+
     </div>
 </section>
 

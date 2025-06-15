@@ -14,14 +14,21 @@ $facebook = (is_array($social_links) && isset($social_links['facebook'])) ? $soc
 $instagram = (is_array($social_links) && isset($social_links['instagram'])) ? $social_links['instagram'] : '';
 $x = (is_array($social_links) && isset($social_links['x'])) ? $social_links['x'] : '';
 $linked_in = (is_array($social_links) && isset($social_links['linked_in'])) ? $social_links['linked_in'] : '';
+$current_language = pll_current_language();
 
+// Set the URL based on the current language
+if ($current_language == 'en') {
+    $home_url = pll_home_url('en');
+} else {
+    $home_url = pll_home_url('ar');
+}
 ?>
 <footer>
     <div class="container">
         <div class="logo-wrapper">
             <div class="logo">
                 <?php if ($footer_logo): ?>
-                    <a class="footer-logo" href="<?= site_url() ?>" aria-label="Go to homepage">
+                    <a class="footer-logo" href="<?= $home_url ?>" aria-label="Go to homepage">
                         <?php
                         $logo_url = $footer_logo['url'];
                         $logo_alt = esc_attr($footer_logo['alt'] ?: get_bloginfo('name'));

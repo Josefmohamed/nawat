@@ -29,12 +29,19 @@
 <?php
 $header_logo = get_field('header_logo', 'options');
 
+$current_language = pll_current_language();
 
+// Set the URL based on the current language
+if ($current_language == 'en') {
+    $home_url = pll_home_url('en');
+} else {
+    $home_url = pll_home_url('ar');
+}
 ?>
 <header class="nawat-header">
   <div class="container header-wrapper">
       <?php if ($header_logo): ?>
-          <a href="<?= site_url() ?>" class="main-logo" role="img" aria-label="Site logo">
+          <a href="<?= $home_url ?>" class="main-logo" role="img" aria-label="Site logo">
               <?php
               $logo_url = $header_logo['url'];
               $logo_alt = esc_attr($header_logo['alt'] ?: get_bloginfo('name'));

@@ -89,7 +89,7 @@ $header_logo = get_field('header_logo', 'options');
                           if ($lang['slug'] == 'ar') {
                               echo '<a href="' . esc_url($lang['url']) . '" class="wpml-ls-item  nav-item capital-text header-link cta-link paragraph-16" aria-label="تغيير اللغة إلى العربية">AR</a>';
                           } elseif ($lang['slug'] == 'en') {
-                              echo '<a href="' . esc_url($lang['url']) . '" class="wpml-ls-item  nav-item capital-text header-link paragraph-16" aria-label="Switch language to English">EN</a>';
+                              echo '<a href="' . esc_url($lang['url']) . '" class="wpml-ls-item  nav-item capital-text header-link cta-link paragraph-16" aria-label="Switch language to English">EN</a>';
                           }
                       }
                   }

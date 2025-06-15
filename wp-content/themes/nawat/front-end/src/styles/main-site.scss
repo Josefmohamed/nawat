@@ -97,3 +97,35 @@ picture {
     color: $dark-Umber;
   }
 }
+
+.page-not-found {
+  padding-block: 350px 150px;
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 1260px;
+    margin-inline: auto;
+    .main-title {
+      font-size: 100px;
+      font-weight: 700;
+      color: $deep-green;
+    }
+    .description {
+      color: $deep-green;
+    }
+    .main-cta-button {
+      box-shadow: 0 1px 2px 0 #0000000D;
+      background-color: $deep-green;
+      color: $white-color;
+      padding: 25px;
+      border-radius: 8px;
+      margin-inline: auto;
+      font-size: 24px;
+      font-weight: 700;
+      &:hover {
+        background-color: #68848A;
+      }
+    }
+  }
+}

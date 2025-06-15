@@ -26,15 +26,15 @@ if (isset($block)) {
 ?>
 <div class="page-not-found">
   <div class="container">
-    <div class="content-wrapper">
-          <h1  class="main-title es-h1 navy-color text-center">
+    <div class="content-wrapper ">
+          <h1  class="main-title  navy-color text-center">
             404
           </h1>
-          <div class="description body navy-color text-center">
+          <div class="description body navy-color text-center nawat-h2">
             Sorry, the page you are looking for could not be found. It might have been removed, renamed, or did not exist in the first place.
           </div>
         <a href="<?php site_url(); ?>"
-           class="cta-button main-cta-button has-icon" >
+           class="cta-button main-cta-button has-icon cta-button" >
           Back to Home
         </a>
     </div>
